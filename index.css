@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(180deg, #1a0f14, #24141b);
+  color: #f2e9ec;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: #1f1319;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.6);
+  border-bottom: 1px solid #3a1f2a;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #e6a4b4;
+}
+
+.dedicatoria {
+  font-size: 1rem;
+  color: #cfa6b3;
+}
+
+/* BIBLIOTECA */
+.biblioteca {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 26px;
+  padding: 40px 25px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* LIBRO */
+.libro {
+  background: linear-gradient(180deg, #2a1820, #201017);
+  border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.6);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.libro:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(230, 164, 180, 0.25);
+}
+
+.libro a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+.libro img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 14px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.7);
+}
+
+.libro h3 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+  color: #f0b7c5;
+}
+
+.libro p {
+  font-size: 0.9rem;
+  color: #c49aa8;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+  color: #a57a89;
+}
